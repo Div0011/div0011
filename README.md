@@ -4,7 +4,7 @@
 **AI-First Software Engineer | Building Autonomous Systems & Scalable SaaS**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/divyansh-awasthi)
-[![Website](https://img.shields.io/badge/Live-Mowglai.in-14b8a6?style=for-the-badge&logo=vercel)](https://mowglai.in)
+[![Website](https://img.shields.io/badge/Live-Mowglai.in-14b8a6?style=for-the-badge&logo=vercel)](https://mowglai.com)
 
 *I build production-grade systems, not just scripts. Specializing in bridging Data Science with scalable Full-Stack architecture.*
 
