@@ -4,7 +4,7 @@
 -->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Div0011/div0011/main/Screenshot_2-6-2026_01752_raw.githubusercontent.com.jpg" alt="Banner" width="980" style="max-width:100%; border-radius:16px;" />
+  <img src="Screenshot_2-6-2026_01752_raw.githubusercontent.com.jpeg" alt="Banner" width="980" style="max-width:100%; border-radius:16px;" />
 
   <h1 style="margin:14px 0 0;">DIVYANSH AWASTHI</h1>
 
@@ -16,6 +16,7 @@
     <a href="https://div0011.github.io/Portfolio/" target="_blank"><img alt="Portfolio" src="https://img.shields.io/badge/Live-Portfolio-14b8a6?style=for-the-badge&logo=Portfolio"/></a>
     <a href="https://linkedin.com/in/divyansh-awasthi" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/></a>
     <a href="mailto:divyanshawasthi90@gmail.com" target="_blank"><img alt="Email" src="https://img.shields.io/badge/Email-Contact-D946EF?style=for-the-badge&logo=gmail"/></a>
+    <a href="Divyansh_Awasthi_Resume.pdf" target="_blank"><img alt="Resume" src="https://img.shields.io/badge/Resume-PDF-E11D48?style=for-the-badge&logo=adobeacrobatreader&logoColor=white"/></a>
   </p>
 
   <p><i>Production-grade isn’t a feature. It’s a standard.</i></p>
