@@ -4,7 +4,7 @@
 -->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Div0011/div0011/main/github_profile_banner.png" alt="Banner" width="980" style="max-width:100%; border-radius:16px;" />
+  <img src="https://raw.githubusercontent.com/Div0011/div0011/main/Screenshot_2-6-2026_01752_raw.githubusercontent.com.jpg" alt="Banner" width="980" style="max-width:100%; border-radius:16px;" />
 
   <h1 style="margin:14px 0 0;">DIVYANSH AWASTHI</h1>
 
