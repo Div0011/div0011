@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh Awasthi - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #525659;
+            margin: 0;
+            padding: 25px 0;
+            display: flex;
+            justify-content: center;
+            color: #222;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .resume-container {
+            width: 210mm;
+            height: 297mm;
+            max-height: 297mm;
+            background-color: white;
+            padding: 6mm 11mm 5mm 11mm;
+            box-sizing: border-box;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        /* Typography */
+        h1 {
+            text-align: center;
+            font-size: 27px;
+            font-weight: 700;
+            margin: 0 0 2px 0;
+            letter-spacing: 0.8px;
+            color: #111;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+            margin-bottom: 3px;
+            line-height: 1.25;
+        }
+
+        .contact-info a {
+            color: #0b57d0;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-info span.separator {
+            color: #777;
+            margin: 0 4px;
+        }
+
+        .summary {
+            font-size: 11.8px;
+            line-height: 1.28;
+            text-align: justify;
+            margin-bottom: 3px;
+            color: #333;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 5px 0 3px 0;
+            position: relative;
+            letter-spacing: 0.6px;
+            color: #111;
+        }
+
+        .section-title span {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 1.5px;
+        }
+
+        .section-title span::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background-color: #0b57d0;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e2e4e8;
+            margin: 3.5px 0;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 8px;
+            margin-top: 1px;
+        }
+
+        .skill-box {
+            border: 1px solid #e5e7eb;
+            border-left: 3px solid #0b57d0;
+            padding: 3px 7px;
+            border-radius: 3px;
+            background-color: #fafbfc;
+        }
+
+        .skill-title {
+            font-size: 11.2px;
+            font-weight: 700;
+            color: #0b57d0;
+            text-transform: uppercase;
+            margin-bottom: 1px;
+            letter-spacing: 0.4px;
+        }
+
+        .skill-content {
+            font-size: 11.8px;
+            line-height: 1.26;
+            color: #374151;
+        }
+
+        .skill-content strong {
+            color: #111827;
+            font-weight: 600;
+        }
+
+        /* Experience & Projects */
+        .experience-item {
+            margin-bottom: 3px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5px;
+        }
+
+        .item-title {
+            font-size: 12.8px;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .item-subtitle {
+            font-weight: 500;
+            color: #4b5563;
+        }
+
+        .item-date, .item-tech {
+            font-size: 11.8px;
+            color: #374151;
+            font-weight: 500;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .item-tech {
+            font-weight: 500;
+            color: #4b5563;
+        }
+
+        .item-link {
+            font-size: 11px;
+            color: #0b57d0;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 1.5px;
+            font-weight: 500;
+        }
+
+        .item-link:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 1px 0 2px 0;
+            padding-left: 14px;
+        }
+
+        li {
+            font-size: 11.8px;
+            line-height: 1.27;
+            margin-bottom: 1px;
+            color: #2b2f38;
+        }
+        
+        .project-item {
+            margin-bottom: 2.5px;
+        }
+        
+        .education-item {
+            margin-bottom: 1px;
+        }
+        
+        .certifications {
+            font-size: 11.8px;
+            line-height: 1.28;
+            color: #2b2f38;
+        }
+
+        .cert-bold {
+            font-weight: 700;
+            color: #111;
+        }
+
+        .bullet-point {
+            display: inline-block;
+            margin: 0 3px;
+            color: #6b7280;
+        }
+
+        b, strong {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                margin: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+                max-height: 297mm;
+                padding: 6mm 11mm 5mm 11mm;
+                margin: 0;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Main Content Wrapper -->
+        <div>
+            <!-- Header -->
+            <h1>DIVYANSH AWASTHI</h1>
+            <div class="contact-info">
+                Lucknow, Uttar Pradesh <span class="separator">|</span> +91 9528545302 <span class="separator">|</span> <a href="mailto:divyanshawasthi90@gmail.com">divyanshawasthi90@gmail.com</a> <span class="separator">|</span> <a href="https://www.linkedin.com/in/divyansh-awasthi-2007982a1/" target="_blank">LinkedIn</a> <span class="separator">|</span> <a href="https://github.com/Div0011" target="_blank">GitHub</a> <span class="separator">|</span> <a href="https://div0011.github.io/Portfolio/" target="_blank">Portfolio</a>
+            </div>
+            
+            <div class="summary">
+                Computer Engineering student and AI/Full-Stack Developer specializing in <strong>Data Science</strong> and scalable web applications. Experienced in developing predictive models, backend APIs (Next.js/FastAPI), and AI integrations including <strong>LLMs, Multi-Agent Systems, RAG</strong>, and asynchronous task processing.
+            </div>
+            
+            <hr>
+
+            <!-- Technical Skills -->
+            <div class="section-title"><span>TECHNICAL SKILLS</span></div>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <div class="skill-title">AI & DATA SCIENCE</div>
+                    <div class="skill-content"><strong>Generative AI (Gemini, OpenAI, Anthropic)</strong>, LangGraph, Hugging Face, <strong>RAG</strong>, LangChain, TensorFlow, PyTorch, Scikit-learn, NLP, Computer Vision, Vector Search</div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">BACKEND & SYSTEMS</div>
+                    <div class="skill-content">FastAPI, Node.js, Express.js, PostgreSQL (RLS, pgvector), Redis, Celery (Task Queues), SQLite, WebSockets, REST APIs, Microservices</div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">WEB DEVELOPMENT</div>
+                    <div class="skill-content"><strong>Next.js (14–16)</strong>, React 19, TypeScript, JavaScript, Tailwind CSS 4.0, Three.js (React Three Fiber), GSAP, Framer Motion, Lenis, HTML5/CSS3</div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">LANGUAGES & TOOLS</div>
+                    <div class="skill-content">Python (Advanced), C++, SQL, Docker, Git/GitHub, Playwright, Linux, Vercel, Render, CI/CD</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Professional Experience -->
+            <div class="section-title"><span>PROFESSIONAL EXPERIENCE</span></div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">AI Engineering Intern <span class="item-subtitle">| Zerzura Studios Pvt. Ltd.</span></div>
+                    <div class="item-date">Jul 2026 – Nov 2026 | Remote</div>
+                </div>
+                <ul>
+                    <li>Engineered an end-to-end multi-agent AI generation pipeline using <strong>LangGraph</strong> & <strong>FastAPI</strong>, implementing parallel execution, QA rework loops, checkpointing, and crash recovery.</li>
+                    <li>Implemented real-time <strong>WebSocket streaming</strong> with Redis state updates, automated multi-dimensional QA evaluators, and unified LLM abstractions across OpenAI, Anthropic, Google, Groq, and Ollama.</li>
+                    <li>Developed persistence layers with <strong>PostgreSQL/pgvector</strong> and built website analysis tooling using Playwright & vision models to transform existing sites into structured design context and frontend code.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Full-Stack Web Developer <span class="item-subtitle">| Mowglai.com (Startup)</span></div>
+                    <div class="item-date">Dec 2025 – May 2026 | Remote</div>
+                </div>
+                <ul>
+                    <li>Built and deployed a responsive <strong>Next.js 16</strong> frontend with interactive 3D elements (<strong>Three.js</strong>) and GSAP animations for modern user experiences.</li>
+                    <li>Implemented Server-Side Rendering (SSR) to optimize page loading performance and streamlined data flow from Figma designs to PostgreSQL databases.</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <!-- Featured Projects -->
+            <div class="section-title"><span>FEATURED PROJECTS (AI & SYSTEMS ARCHITECTURE)</span></div>
+            
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">GET IT! | Recruitment Intelligence Ecosystem</div>
+                    <div class="item-tech">Next.js · FastAPI · Python · SQLite · Gemini 2.0</div>
+                </div>
+                <a href="https://div0011.github.io/AI-POWERED-RESUME-ASSISTANCE/" target="_blank" class="item-link">https://div0011.github.io/AI-POWERED-RESUME-ASSISTANCE/</a>
+                <ul>
+                    <li>Built a model-rotation API layer with automated failover across Gemini models to mitigate rate limits and ensure service reliability.</li>
+                    <li>Developed a hybrid candidate ranking engine combining semantic vector similarity scoring with structured keyword filtering for resume screening.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">GUARD IT! | Multi-Tenant AI Content Moderation SaaS</div>
+                    <div class="item-tech">FastAPI · Next.js · PostgreSQL · Redis · Celery · Docker</div>
+                </div>
+                <a href="https://div0011.github.io/GUARD-IT/" target="_blank" class="item-link">https://div0011.github.io/GUARD-IT/</a>
+                <ul>
+                    <li>Implemented multi-tenant data isolation and security policies using PostgreSQL Row-Level Security (RLS).</li>
+                    <li>Designed an asynchronous moderation pipeline with Celery task queues and fallback routing for low-latency text and image classification.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">STORE IT! | AI Document Storage</div>
+                    <div class="item-tech">React · FastAPI · Gemini 2.5 Flash · AES-256 Encryption</div>
+                </div>
+                <a href="https://div0011.github.io/STORE-IT-/" target="_blank" class="item-link">https://div0011.github.io/STORE-IT-/</a>
+                <ul>
+                    <li>Built an AI-assisted document ingestion pipeline using Gemini 2.5 Flash for OCR text extraction and automated file categorization.</li>
+                    <li>Secured file storage with client-side AES-256 encryption and automated PII detection to identify sensitive data before persistence.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">LeadGenius | Automated Outreach Pipeline</div>
+                    <div class="item-tech">FastAPI · Celery Beat · PostgreSQL · SMTP/IMAP</div>
+                </div>
+                <a href="https://lead-gen-iota-flame.vercel.app/" target="_blank" class="item-link">https://lead-gen-iota-flame.vercel.app/</a>
+                <ul>
+                    <li>Engineered a scalable outreach automation pipeline using Celery Beat and Redis for scheduled email delivery and bounce handling.</li>
+                    <li>Integrated email sentiment classification to categorize inbound replies and prioritize high-intent responses for follow-up.</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <!-- Education & Certifications -->
+            <div class="section-title"><span>EDUCATION & CERTIFICATIONS</span></div>
+            
+            <div class="education-item item-header">
+                <div class="item-title">Bachelor of Technology (B.Tech) in Computer Science Engineering <span class="item-subtitle">| Babasaheb Bhimrao Ambedkar University, Lucknow</span></div>
+                <div class="item-date">2024 – Present</div>
+            </div>
+            
+            <div class="certifications">
+                <span class="cert-bold">Certifications & Ongoing Studies:</span> Data Science with Generative AI (PW Skills) <span class="bullet-point">•</span> Data Structures and Algorithms with Python
+                <br>
+                <span style="visibility: hidden; font-size: 0;">Certifications & Ongoing Studies:</span> <span class="bullet-point">•</span> Advanced Web Frameworks (Next.js 16, React 19, Full-Stack Architecture)
+            </div>
+        </div>
+    </div>
+</body>
+</html>
