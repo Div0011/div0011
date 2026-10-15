@@ -34,12 +34,12 @@
             height: 297mm;
             max-height: 297mm;
             background-color: white;
-            padding: 6mm 11mm 5mm 11mm;
+            padding: 6mm 11mm 2mm 11mm;
             box-sizing: border-box;
             box-shadow: 0 4px 12px rgba(0,0,0,0.35);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             overflow: hidden;
         }
 
@@ -90,7 +90,7 @@
             font-size: 13.5px;
             font-weight: 700;
             text-transform: uppercase;
-            margin: 5px 0 3px 0;
+            margin: 4px 0 2.5px 0;
             position: relative;
             letter-spacing: 0.6px;
             color: #111;
@@ -116,14 +116,14 @@
         hr {
             border: 0;
             border-top: 1px solid #e2e4e8;
-            margin: 3.5px 0;
+            margin: 3px 0;
         }
 
         /* Skills Grid */
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4px 8px;
+            gap: 3.5px 8px;
             margin-top: 1px;
         }
 
@@ -157,7 +157,7 @@
 
         /* Experience & Projects */
         .experience-item {
-            margin-bottom: 3px;
+            margin-bottom: 2.5px;
         }
 
         .item-header {
@@ -196,7 +196,7 @@
             color: #0b57d0;
             text-decoration: none;
             display: inline-block;
-            margin-bottom: 1.5px;
+            margin-bottom: 1px;
             font-weight: 500;
         }
 
@@ -211,13 +211,13 @@
 
         li {
             font-size: 11.8px;
-            line-height: 1.27;
+            line-height: 1.25;
             margin-bottom: 1px;
             color: #2b2f38;
         }
         
         .project-item {
-            margin-bottom: 2.5px;
+            margin-bottom: 2px;
         }
         
         .education-item {
@@ -226,7 +226,7 @@
         
         .certifications {
             font-size: 11.8px;
-            line-height: 1.28;
+            line-height: 1.26;
             color: #2b2f38;
         }
 
@@ -257,7 +257,7 @@
                 width: 210mm;
                 height: 297mm;
                 max-height: 297mm;
-                padding: 6mm 11mm 5mm 11mm;
+                padding: 6mm 11mm 2mm 11mm;
                 margin: 0;
                 page-break-after: avoid;
                 page-break-inside: avoid;
@@ -309,13 +309,25 @@
             
             <div class="experience-item">
                 <div class="item-header">
+                    <div class="item-title">AI & Full-Stack Developer Intern <span class="item-subtitle">| Dr.Tracker (Wellness Platform)</span></div>
+                    <div class="item-date">Sep 2026 – Nov 2026 | Remote</div>
+                </div>
+                <ul>
+                    <li>Designed and implemented the end-to-end <strong>AI chatbot architecture</strong>, orchestrating conversational workflows and contextual prompt pipelines for healthcare user interactions.</li>
+                    <li>Developed an automated <strong>email outreach system</strong> with event-driven scheduling to handle user communication and onboarding workflows reliably.</li>
+                    <li>Designed responsive UI/UX interfaces and refined frontend workflows to ensure intuitive navigation and visual consistency across the platform.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
                     <div class="item-title">AI Engineering Intern <span class="item-subtitle">| Zerzura Studios Pvt. Ltd.</span></div>
                     <div class="item-date">Jul 2026 – Nov 2026 | Remote</div>
                 </div>
                 <ul>
                     <li>Engineered an end-to-end multi-agent AI generation pipeline using <strong>LangGraph</strong> & <strong>FastAPI</strong>, implementing parallel execution, QA rework loops, checkpointing, and crash recovery.</li>
-                    <li>Implemented real-time <strong>WebSocket streaming</strong> with Redis state updates, automated multi-dimensional QA evaluators, and unified LLM abstractions across OpenAI, Anthropic, Google, Groq, and Ollama.</li>
-                    <li>Developed persistence layers with <strong>PostgreSQL/pgvector</strong> and built website analysis tooling using Playwright & vision models to transform existing sites into structured design context and frontend code.</li>
+                    <li>Implemented real-time <strong>WebSocket streaming</strong> with Redis state updates, automated QA evaluators, and unified LLM abstractions across OpenAI, Anthropic, Google, Groq, and Ollama.</li>
+                    <li>Developed persistence layers with <strong>PostgreSQL/pgvector</strong> and built website analysis tooling using Playwright & vision models to transform existing sites into structured context.</li>
                 </ul>
             </div>
 
